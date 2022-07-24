@@ -22,7 +22,7 @@ export default function Intro() {
             }}
           /></span>
         </div>
-        <button className="button i-button">Hire me</button>
+        <button className="button i-button">Hire_me</button>
         <div className="i-icons">
             <a href="https://github.com/Chanchalcr" target="_blank" rel="noreferrer">
             <img src={Github} alt=""/>
