@@ -25,13 +25,13 @@ export default function Intro() {
         </div>
         <button className="button i-button">Hire me</button>
         <div className="i-icons">
-            <a href="https://github.com/Chanchalcr" target="_blank">
+            <a href="https://github.com/Chanchalcr" target="_blank" rel="noreferrer">
             <img src={Github} alt=""/>
             </a>
-            <a href="https://www.linkedin.com/in/chanchal-rai-4456b2216/" target="_blank">
+            <a href="https://www.linkedin.com/in/chanchal-rai-4456b2216/" target="_blank" rel="noreferrer">
             <img src={LinkedIn} alt=""/>
             </a>
-            <a href="https://www.instagram.com/chanchal.rai.8/?hl=en" target="_blank">
+            <a href="https://www.instagram.com/chanchal.rai.8/?hl=en" target="_blank" rel="noreferrer">
             <img src={Instagram} alt=""/>
             </a>
         </div>
