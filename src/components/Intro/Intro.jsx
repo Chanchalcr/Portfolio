@@ -1,6 +1,6 @@
 import React from "react";
 import "./Intro.css";
-// import Typewriter from "typewriter-effect";
+import Typewriter from "typewriter-effect";
 import Github from '../../img/github.png'
 import LinkedIn from '../../img/linkedin.png'
 import Instagram from '../../img/instagram.png'
@@ -12,16 +12,15 @@ export default function Intro() {
     <div className="intro">
       <div className="i-left">
         <div className="i-name">
-          {/* <Typewriter
-            onInit={(typewriter) => {
-              typewriter
-              .typeString("Hi! I'm ")
-              .start();
-            }}
-          /> */}
           <span>Hi! I'm </span>
           <span>Chanchal</span>
-          <span>I am an engineering student and a tech enthusiast. I love full-stack web development and coding Java!</span>
+          <span><Typewriter
+            onInit={(typewriter) => {
+              typewriter
+              .typeString("I am an engineering student and a tech enthusiast. I love full-stack web development and coding Java!")
+              .start();
+            }}
+          /></span>
         </div>
         <button className="button i-button">Hire me</button>
         <div className="i-icons">
