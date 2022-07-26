@@ -13,7 +13,7 @@ export default function Navbar() {
                 <li>Home</li>
                 <li>Skills</li>
                 <li>Projects</li>
-                <li>About Me</li>
+                <li>About</li>
             </ul>
         </div>
         <button className="button n-button">
