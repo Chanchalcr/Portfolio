@@ -59,15 +59,27 @@
     transform: scale(0.69);
     left: 20%;
     top: -38%;
-    z-index: 10;
+    z-index: 2;
 }
 .i-right>:nth-child(2) {
-    transform: scale(0.69);
+    transform: scale(0.80);
     left: 5%;
     top: -9%;
 }
 .i-right>:nth-child(3) {
     transform: scale(0.69);
-    left: 5%;
-    top: -9%;
+    left: 8%;
+    top: -12%;
+}
+
+.blur {
+    position: absolute;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: #edd0ff;
+    filter: blur(72px);
+    z-index: -9;
+    top: -18%;
+    left: 56%;
 }
