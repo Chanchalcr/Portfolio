@@ -11,9 +11,9 @@ export default function Navbar() {
         <div className="n-list">
             <ul>
                 <li>Home</li>
+                <li>About</li>
                 <li>Skills</li>
                 <li>Projects</li>
-                <li>About</li>
             </ul>
         </div>
         <button className="button n-button">
