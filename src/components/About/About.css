@@ -25,4 +25,9 @@
 
 .a-right {
     flex: 3;
+    position: relative;
+}
+.hum {
+    position: absolute;
+    left: 10%;
 }
