@@ -22,7 +22,9 @@
     color: var(--gray);
     margin-top: 10px;
 }
-
+.btn-abt {
+    margin-top: 1rem;
+}
 .a-right {
     flex: 3;
     position: relative;

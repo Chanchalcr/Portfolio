@@ -1,0 +1,27 @@
+.skills{
+    display: flex;
+    margin-top: 6rem;
+    height: 53vh;
+    align-items: center;
+    flex-direction: column;
+    width: 90vw;
+    background-image: linear-gradient(#fca71fa9,rgba(255, 255, 0, 0));
+}
+h1 {
+    color: var(--black);
+    font-size: 2.4rem;
+}
+.contain {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.skillLogo {
+    width: 10vw;
+    display: inline;
+}
+.skillLogo1 {
+    width: 22vw;
+    height: 9vw;
+    display: inline;
+}
