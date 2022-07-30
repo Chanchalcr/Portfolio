@@ -21,8 +21,8 @@ export default function SlideShow({imgs}) {
   return (
     <div className='slide'>
       <img src={imgs[index]} alt="" className='photo'/>
-      <button className='previous' onClick={pre}>p</button>
-      <button className='next' onClick={nex}>n</button>
+      <button className='previous' onClick={pre}>&#8592;</button>
+      <button className='next' onClick={nex}>&#8594;</button>
     </div>
   )
 }
