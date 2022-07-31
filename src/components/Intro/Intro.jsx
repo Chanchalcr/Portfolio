@@ -13,8 +13,11 @@ import glassesimoji from '../../img/glassesimoji.png'
 import FlotingDiv from "../FlotingDiv/FlotingDiv";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
-export default function Intro() {
+import { motion } from "framer-motion";
+import { Link } from 'react-scroll'
 
+export default function Intro() {
+  const transition = {duration : 2, type : 'spring'}
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
@@ -31,7 +34,11 @@ export default function Intro() {
             }}
           /></span>
         </div>
-        <button className="button i-button">Hire_me</button>
+        <Link spy={true} to='Contact' smooth={true}>
+        <motion.button 
+        whileTap={{scale : 0.95}}
+        className="button i-button">Hire_me</motion.button>
+        </Link>
         <div className="i-icons">
             <a href="https://github.com/Chanchalcr" target="_blank" rel="noreferrer">
             <img src={Github} alt=""/>
@@ -51,15 +58,27 @@ export default function Intro() {
         <div className="imogi">
         <img src={glassesimoji} alt=""/>
         </div>
-        <div style={{top:"64%", left: "0%", zIndex:'2'}}>
+        <motion.div 
+        initial ={{top: '64%', left : '-20%'}}
+        whileInView = {{left:'0%'}}
+        transition ={transition}
+        style={{top:"64%", left: "-20%", zIndex:'2'}}>
           <FlotingDiv image={crown} txt1='Web' txt2='Developer'/>
-        </div>
-        <div style={{top:"38%", left: "77%", zIndex: '2'}}>
+        </motion.div>
+        <motion.div 
+        initial ={{top: '38%', left : '90%'}}
+        whileInView = {{left:'77%'}}
+        transition ={transition}
+        style={{top:"38%", left: "90%", zIndex: '2'}}>
           <FlotingDiv image={thumbup} txt1='Data' txt2='Structures'/>
-        </div>
-        <div style={{top:"64%", left: "70%", zIndex: '2'}}>
+        </motion.div>
+        <motion.div
+         initial ={{top: '64%', left : '90%'}}
+         whileInView = {{left:'60%'}}
+         transition ={transition}
+         style={{top:"64%", left: "70%", zIndex: '2'}}>
           <FlotingDiv image={thumbup} txt1='Algorithms' txt2=''/>
-        </div>
+        </motion.div>
         <div className="blur" style={{background: "rgb(238 210 255)"}}>
         </div>
         <div className="blur" style={{background:'#C1F5FF', top:'17rem', width:'21rem', height:'11rem', left: '-9rem'}}></div>

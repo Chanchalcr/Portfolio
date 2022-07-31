@@ -11,11 +11,13 @@ import img5 from './pics/img4.jpg'
 import Resume from './Chanchal_Resume_2022 (3).pdf'
 import {themeContext} from '../../Context'
 import { useContext } from "react";
+import { motion } from 'framer-motion'
+
 export default function About() {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
-    <div className='aboutMe'>
+    <div className='aboutMe' id='About'>
       <div className="a-left">
         <span className='heading1' style={{color: darkMode? 'white' : ''}}>ABout</span>
         <span className='heading2'> Me</span>
@@ -24,13 +26,17 @@ export default function About() {
         <button className='button btn-abt'>Download CV</button>
         </a>
       </div>
-      <div className='a-right'>
+      <motion.div 
+      initial = {{left: ' 10%'}}
+      whileInView ={{left: '0%'}}
+      transition ={{duration:'1', type:'spring'}}
+      className='a-right'>
         <img src={humble} alt="" className='hum'/>
         <SlideShow imgs={[img1,img2,img3,img4,img5]}/>
         <div className="blur" style={{background: '#C1F5FF', right:'0%'}}>
         </div>
         <div className="blur" style={{background:"rgb(238 210 255)", top:'14rem', width:'21rem', height:'11rem', left: '-22rem'}}></div>
-      </div>
+      </motion.div>
     </div>
   )
 }

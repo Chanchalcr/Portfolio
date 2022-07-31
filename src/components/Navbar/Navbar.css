@@ -29,10 +29,12 @@
     margin-right: 4rem;
     list-style: none;
 }
-.n-list > ul > li:hover {
+
+.n-button {
+    width: 10.4vw;
+}
+
+.one:hover {
     cursor: pointer;
     color: var(--orange);
-}
-.n-button {
-    flex: 2;
 }

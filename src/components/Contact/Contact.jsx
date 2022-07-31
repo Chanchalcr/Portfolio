@@ -5,6 +5,7 @@ import { useRef } from "react";
 import { useState } from "react";
 import {themeContext} from '../../Context'
 import { useContext } from "react";
+import { motion } from 'framer-motion'
 
 export default function Contact() {
   
@@ -25,7 +26,7 @@ export default function Contact() {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
-    <div className="contact">
+    <div className="contact" id="Contact">
       <div className="c-left">
         <span style={{color: darkMode? 'white' : ''}}>Get in touch</span>
         <span>Contact me</span>
@@ -46,7 +47,9 @@ export default function Contact() {
             placeholder="Email"
           />
           <textarea name="message" className="user" placeholder="Message" />
-          <input type="submit" value="Send" className="button" />
+          <motion.input 
+          whileTap={{scale : 0.95}}
+          type="submit" value="Send" className="button" />
           <span style={{color: darkMode? 'white' : ''}}>{done && "Thanks for containing me"}</span>
           <div
             className="blur c-blur"
