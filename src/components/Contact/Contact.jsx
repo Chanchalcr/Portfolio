@@ -50,7 +50,7 @@ export default function Contact() {
           <motion.input 
           whileTap={{scale : 0.95}}
           type="submit" value="Send" className="button" />
-          <span style={{color: darkMode? 'white' : ''}}>{done && "Thanks for containing me"}</span>
+          <span style={{color: darkMode? 'white' : ''}}>{done && "Thanks for contacting me"}</span>
           <div
             className="blur c-blur"
             style={{ background: "var(--purple)" }}
