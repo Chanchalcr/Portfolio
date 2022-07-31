@@ -6,9 +6,15 @@ import Skills from "./components/Skills/Skills";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import {themeContext} from './Context'
+import { useContext } from "react";
 function App() {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   return (
-    <div className="App">
+    <div className="App"
+    style={{background: darkMode? 'black': '', color : darkMode? 'white': ''}}
+    >
       <Navbar/>
       <Intro/>
       <About/>

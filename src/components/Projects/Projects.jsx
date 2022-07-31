@@ -6,10 +6,14 @@ import BlackJack from './promo/Black.png'
 import Skill from './promo/skill.png'
 import Snake from './promo/snake.png'
 import Weather from './promo/weather.png'
+import {themeContext} from '../../Context'
+import { useContext } from "react";
 export default function Projects() {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   return (
     <div className='portfolio'>
-      <span >Recent Projects</span>
+      <span style={{color: darkMode? 'white' : ''}}>Recent Projects</span>
       <span >Portfolio</span>
       <Swiper
       spaceBetween={30}
