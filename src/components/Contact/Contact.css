@@ -56,3 +56,21 @@ textarea{
     top: 8rem;
     left: -9rem;
 }
+@media screen and (max-width: 480px) {
+    .contact {
+        flex-direction: column;
+    }
+    .c-right{
+        margin-top: 2rem;
+    }
+    /* .c-right>form {
+        width: 80%!important;
+    } */
+    
+    .c-right .user {
+       width: 90vw;
+    }
+    textarea{
+        height: 4rem!important;
+    }
+}

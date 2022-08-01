@@ -25,3 +25,20 @@ h1 {
     height: 9vw;
     display: inline;
 }
+@media screen and (max-width: 480px) {
+    .skills{
+        margin-top: 20rem;
+    }
+    .contain{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .skillLogo{
+        width: 4rem;
+    }
+    .skillLogo1{
+        width: 7rem;
+        height: 3rem;
+    }
+}

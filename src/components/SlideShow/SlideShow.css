@@ -2,7 +2,8 @@
 .photo{
     position: absolute;
     left: 30%;
-    height: 65%;
+    min-height: 65%;
+    max-height: 100%;
     width: 60%;
     box-shadow: 0px 19px 60px rgba(0, 0, 0, 0.747);
     border-radius: 20px;
@@ -34,4 +35,21 @@
 }
 .next:hover{
     background-color: rgba(255, 255, 255, 0.868);
+}
+
+@media screen and (max-width: 480px) {
+ .photo{
+    border: black solid 1px;
+    height: 20rem!important;
+    width: 80vw;
+    left: 1rem;
+ }
+ .previous {
+    left: 1rem;
+    top: 10rem;
+ }
+ .next {
+    right: 1.5rem;
+    top: 10rem;
+ }
 }

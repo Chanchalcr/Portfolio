@@ -22,3 +22,20 @@
     display: flex;
     gap: 2rem;
 }
+@media screen and (max-width: 480px) {
+    .footer{
+        margin-top: 5rem;
+    }
+    .f-content{
+        padding-top: 2rem;
+    }
+
+    .f-content>:nth-child(2) {
+        position: absolute;
+        top: 0rem;
+    }
+    .f-content>:nth-child(1) {
+        position: absolute;
+        top: -2rem;
+    }
+}

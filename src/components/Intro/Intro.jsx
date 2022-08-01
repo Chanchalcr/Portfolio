@@ -62,6 +62,7 @@ export default function Intro() {
         initial ={{top: '64%', left : '-20%'}}
         whileInView = {{left:'0%'}}
         transition ={transition}
+        className = 'floating-div one'
         style={{top:"64%", left: "-20%", zIndex:'2'}}>
           <FlotingDiv image={crown} txt1='Web' txt2='Developer'/>
         </motion.div>
@@ -69,6 +70,7 @@ export default function Intro() {
         initial ={{top: '38%', left : '90%'}}
         whileInView = {{left:'77%'}}
         transition ={transition}
+        className = 'floating-div two'
         style={{top:"38%", left: "90%", zIndex: '2'}}>
           <FlotingDiv image={thumbup} txt1='Data' txt2='Structures'/>
         </motion.div>
@@ -76,6 +78,7 @@ export default function Intro() {
          initial ={{top: '64%', left : '90%'}}
          whileInView = {{left:'60%'}}
          transition ={transition}
+         className = 'floating-div three'
          style={{top:"64%", left: "70%", zIndex: '2'}}>
           <FlotingDiv image={thumbup} txt1='Algorithms' txt2=''/>
         </motion.div>
