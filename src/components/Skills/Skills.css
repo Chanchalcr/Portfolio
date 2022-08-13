@@ -27,7 +27,7 @@ h1 {
 }
 @media screen and (max-width: 480px) {
     .skills{
-        margin-top: 20rem;
+        margin-top: 25rem;
     }
     .contain{
         flex-direction: column;

@@ -35,7 +35,7 @@
 }
 @media screen and (max-width: 480px) {
     .aboutMe{
-        margin-top: 50vh;
+        margin-top: 80vh;
         flex-direction: column;
     }
     .a-right{
