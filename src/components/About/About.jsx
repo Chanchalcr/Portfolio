@@ -8,7 +8,7 @@ import img2 from './pics/img1.jpg'
 import img3 from './pics/img2.jpg'
 import img4 from './pics/img3.jpg'
 import img5 from './pics/img4.jpg'
-import Resume from './Chanchal_Resume_2022 (3).pdf'
+import Resume from './Chanchal_Resume_2022 (4).pdf'
 import {themeContext} from '../../Context'
 import { useContext } from "react";
 import { motion } from 'framer-motion'
